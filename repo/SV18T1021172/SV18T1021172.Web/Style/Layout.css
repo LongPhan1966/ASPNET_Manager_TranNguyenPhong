@@ -1,0 +1,17 @@
+﻿body {
+    
+}
+
+.employee-header-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.employee-body-action{
+    display: flex;
+    justify-content: flex-end
+}
+.employee-body-action a {
+    width: 30%;
+    margin: 0 5px;
+}

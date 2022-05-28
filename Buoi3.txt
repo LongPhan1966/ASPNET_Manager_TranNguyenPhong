@@ -1,0 +1,48 @@
+tạo thư mục themes trong project Web
+Copy các file và thư mục trong admin-lte vào thư mục Themes
+
+test: /themes
+
+mở file _layout ở view share xóa toàn bộ
+
+mở file Themes/pages/emx/blank
+
+copy toàn bộ code trong đó paste qua _layout
+
+cmt gg-font = ctrl + k + c
+
+thay đầu các đường dẫn ../../ thành ~/themes (~ : là bắt đầu từ thư mục gốc)
+
+trong Views/shared tạo các PartialPage có tên : _Header, _SideBar, _Footer
+
+thu gọn header và cắt dán vào file Header, tương tự với _SideBar và _Footer
+
+ở main content thêm @RenderBody() (chỉ có 1 Lệnh render body)
+
+Chèn code @Html.Partial("_Footer"), @Html.Partial("_Header"), @Html.Partial("_SideBar") và file _Layout
+hoặc @{ Html.RenderPartial("_Footer"); } nhưng cách viết này xử lý nhanh hơn
+
+kiểm tra lại bằng cách /home/categories
+
+Header : xóa các <li> mail, message, noti
+<--! Clear giao diện -->
+
+
+Controller là 1 lớp có tên là <Name>Controller là bắt buộc, phải kế thừa Controller (: Controller) 
+	action là hàm public trả về kiểu dữ liệu ActionResult
+
+tạo controller Supplier click Index chọn add view tương tự với các chức năng còn lại
+
+chú ý Use pagelayout
+
+_ViewStart.cshtml quy định trang web hiển thị
+
+
+bật chế độ xác định người dùng
+<authentication mode="Forms">
+		  <forms name="salonshop" loginUrl="~/account/login" />
+	  </authentication>
+name : tạo ra cookie
+
+phương pháp phát triển phần mềm linh hoạt Agile
+cách sử dụng TaskList tại những đoạn code chưa hoàn chỉnh ... (Code convention)

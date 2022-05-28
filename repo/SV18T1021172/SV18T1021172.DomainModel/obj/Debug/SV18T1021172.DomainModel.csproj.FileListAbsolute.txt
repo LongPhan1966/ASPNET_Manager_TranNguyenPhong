@@ -1,0 +1,6 @@
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.DomainModel\bin\Debug\SV18T1021172.DomainModel.dll
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.DomainModel\bin\Debug\SV18T1021172.DomainModel.pdb
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.DomainModel\obj\Debug\SV18T1021172.DomainModel.csproj.CoreCompileInputs.cache
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.DomainModel\obj\Debug\SV18T1021172.DomainModel.dll
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.DomainModel\obj\Debug\SV18T1021172.DomainModel.pdb
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.DomainModel\obj\Debug\SV18T1021172.DomainModel.csproj.AssemblyReference.cache

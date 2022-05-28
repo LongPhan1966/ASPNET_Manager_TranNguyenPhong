@@ -1,0 +1,41 @@
+ICustomerDAL
+
+xử lý dữ liệu liên quan đến khách hàng (Customer)
+	- Tìm kiếm và hiển thị danh sách khách hàng : Phân trang, Tìm theo tên hoặc địa chỉ
+		(SELECT)
+	- Bổ sung (INSERT)
+	- Cập nhật khách (UPDATE)
+	- Xóa Khách hàng (DELETE)
+	- Thống kê số lượng thỏa mãn đk tìm kiếm
+	- Lấy thông tin chi tiết của khách hàng theo mã khách hàng
+	- Kiểm tra xem 1 khách hàng hiện đang có dữ liệu liên quan hay không
+
+
+*Trong quá trình làm sẽ có nhu cầu đổi tên (Refactor)
+	thì chọn tên biến cần đổi nhấn ctrl bấm 2 lần R để rename
+	phạm vi đổi (toàn bộ project)
+
+
+1. tạo và mở kết nối csdl thông qua chuỗi kết nối
+	(SqlConnection, ConnectionString)
+
+2. tạo câu lệch (SqlCommand)
+	thường 1 Command có các thuộc tính 
+		CommandText: Câu lệch sql cần thực thi
+		CommandType: Loại câu lệnh
+		Connection: kết nối câu lệnh sử dụng (bước 1)
+		(Option) Parameter : tham số các câu lệnh
+
+3. Thực thi câu lệnh và xử lý kết quả trả về của câu lệnh:
+	Thường dùng các cách thực thi (Execute) sau:
+		ExecuteReader: thường dùng khi kết quả của câu lệnh trả về dưới dạng bảng
+					(tập các dòng cột)
+		ExecuteScarla: thường dùng khi kq trả về của câu lệnh 1 cột 1 dòng
+					(1 giá trị vô hướng)
+		ExecuteNonQuery: thường dùng khi câu lệnh không trả về giá trị và chỉ quan tâm đến
+					số dòng dữ liệu bị tác động bởi câu lệnh
+
+4. Đóng những cái đã mở(không còn dùng)
+
+
+**trường hợp chuỗi nằm trên nhiều dòng thì phải có dấu @

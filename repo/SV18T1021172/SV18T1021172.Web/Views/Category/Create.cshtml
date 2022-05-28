@@ -1,0 +1,49 @@
+﻿@model SV18T1021172.DomainModel.Category
+@{
+    
+}
+<div class="box box-primary">
+    <div class="box-header with-border">
+
+    </div>
+    <div class="box-body">
+        <form class="form-horizontal" action="~/category/save" method="post">
+
+            @Html.HiddenFor(m => m.CategoryID)
+
+            <div class="form-group">
+                <label class="control-label col-sm-2">Tên loại hàng:</label>
+                <div class="col-sm-10" style="width: 700px;">
+                    @Html.TextBoxFor(m => m.CategoryName, new { @class = "form-control", @autofocus = "autoforcus" })
+                    @Html.ValidationMessageFor(m => m.CategoryName, "", new { @class = "text-danger" })
+                    @*<input autofocus type="text" class="form-control" id="CategoryName" name="CategoryName">*@
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Mô tả:</label>
+                <div class="col-sm-10" style="width: 700px;">
+                    @Html.TextBoxFor(m => m.Description, new { @class = "form-control" })
+
+                    @*<input type="text" class="form-control" id="Description" name="Description" max="20" placeholder="Mô tả loại hàng không quá 20 từ">*@
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <a href="~/category" class="btn btn-warning">
+                        <i class="fa fa-backward"></i>
+                        Quay về
+                    </a>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-save"></i>
+                        Thêm loại hàng
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="box-footer">
+
+    </div>
+</div>
+

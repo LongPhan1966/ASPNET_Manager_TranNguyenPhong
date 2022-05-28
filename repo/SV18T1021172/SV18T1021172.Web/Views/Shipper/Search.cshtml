@@ -1,0 +1,56 @@
+﻿@model SV18T1021172.Web.Models.ShipperPaginationResult
+@{
+    Layout = null;
+}
+<p style="margin : 10px 0px">
+    Có <strong>@Model.RowCount</strong> người giao hàng trong tổng số <strong>@Model.PageCount</strong> trang
+</p>
+
+<div class="container-fluid">
+    <div class="row">
+        @foreach (var item in Model.Data)
+        {
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading employee-header-content">
+                        <div class="heading-right">
+                            <h4>@item.ShipperName</h4>
+                            <small>@item.Phone</small>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="employee-body-content">
+                            @*<span>Birth Date: </span><p>21-03-1995</p>*@
+
+                            <div class="employee-body-action">
+                                <a class="btn btn-primary" href="~/shipper/edit/@item.ShipperID">
+                                    <i class="fa fa-edit"></i> Sửa
+                                </a>
+                                @* TODO: người giao hàng chưa vào được *@
+                                <a class="btn btn-danger" href="~/shipper/delete/@item.ShipperID">
+                                    <i class="fa fa-remove"></i> Xóa
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="text-center">
+    <ul class="pagination">
+        @for (int i = 1; i <= Model.PageCount; i++)
+        {
+            if (i == Model.Page)
+            {
+                <li class="active"><a href="#">@i</a></li>
+            }
+            else
+            {
+                <li><a href="javascript:;" onClick="doSearch(@i)">@i</a></li>
+            }
+        }
+    </ul>
+</div>

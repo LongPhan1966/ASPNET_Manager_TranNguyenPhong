@@ -1,0 +1,23 @@
+vs studio 2019 ent
+sql server 2014
+web server : IIS
+	control panel -> program & feature -> turn Windown -> IIS (www,...)
+
+khoi dong  vs studio
+tạo project (chọn ngôn ngữ c#) - chọn blankSolution - đặt tên "FriendManager"
+	trong solution folder tạo 2 thư mục (Application, Libraries)
+
+tạo ứng dụng web sử dụng công nghệ asp.net mvc với tên là 
+	-FriendManager.Web (Quy tắc đặt tên "tên project.Web" , chọn bản 4.5(không bắt buộc))
+	- Chọn MVC , bỏ config for https
+	- nhấn ctrl + Shift + B (build solution) -> nhân ctrl + f5
+
+
+-- cấu hình tên miền:
+longxinh.com.vn
+
+vào IIS chọn sites ở cây thư mục phải: chọn add website -> nhập tên local muốn nhập
+	-> chọn đường dẫn dẫn đến tên thư mục .web 
+			(tất cả các tên folder không được đặt tiếng việt hoặc kí tự đặt biệt)
+	-> Host name = site name
+	chọn C:\Windows\System32\drivers\etc chọn file localhost thêm 127.0.0.1 + hostname

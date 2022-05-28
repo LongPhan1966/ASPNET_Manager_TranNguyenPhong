@@ -1,0 +1,2 @@
+module product photo, product attribuile, xử lý lưu và cập nhật sản phẩm
+	ajax trang product, product photo, product attribuile

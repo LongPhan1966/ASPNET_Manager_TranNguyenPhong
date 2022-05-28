@@ -1,0 +1,16 @@
+thêm bootstrap 3 và project
+
+thêm các hàm thêm sửa xóa khách hàng ở CustomerController
+
+Thêm form tìm kiếm cho trang index khách hàng , sửa name thành searchvalue
+
+
+
+
+ctrl + k +d : tự fomat lại code
+
+
+thiết kế giao diện hết tất cả các menu của: shipper, nhân viên, loại hàng
+
+
+Lưu ý thiết kế giao diện : Không để giao diện cảm giác được trống

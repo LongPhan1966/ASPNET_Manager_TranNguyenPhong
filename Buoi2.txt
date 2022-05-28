@@ -1,0 +1,66 @@
+xác thực sa ở sql server
+	- tạo mới csdl LiteCommerceDB
+	- kết nối với script
+
+mở VS studio (tất cả các tên để được đặt theo kiểu PascalCase
+			Tham sô hoặc biến đặt theo camelCase)
+	tạo mới project - chọn blank solution -> đặt tên (SV<mã sv>) SV18T1021172 -> create
+	tạo 2 folder Applications, Libraries
+		- Applications nhấp phải chọn new project -> ASP.NET Web Applications (.Net framework)
+		project name : quy ước <solutionName>.Web	
+		chọn MVC bỏ config http và no authentication
+		build solution -> ctrl f5(1 lần) (mỗi lần thay đổi code chỉ cần build)
+		
+		- Libraies tạo project  + class Lib (.net Framework) tên là <Solutionname>.DomainModel
+		tương tự	project  + class Lib (.net Framework)	<Solutionname>.DataLayer
+				project  + class Lib (.net Framework)	<Solutionname>.BusinessLayer
+
+
+		Domain add class Category (bổ sung public)
+		các lớp trong domain tạo lớp càng đơn giản càng tốt
+
+		DataLayer bổ sung interface có tên là ICategoryDAL 
+		nhấp phải chọn reference chọn Domain
+				(Lớp Interface : mô tả các quy tắc, tiêu chuẩn hoặc chức năng cần cài đặt)
+		phải có 5 chức năng cơ bản : lấy được loại hàng, thêm mới , cập nhật, xóa, danhsach
+		- tạo 2 thư mục : SQLServer, FakeDB
+			ở FakeDB new class CategoryDAL
+			ở SQLServer new class CategoryDAL
+
+		-Connect database
+			using System.Data;
+			using System.Data.SqlClient;
+		
+		Bussiness 
+			nhấp phải chọn reference chọn Domain, dataLayer
+			assembies : chọn System.Configuration (add thư viện)
+			thêm class CommonDataService
+
+		vào .Web chọn web.config
+		<connectionStrings>
+			<add 	name="DB"
+			 	providerName="SQLServer"
+			 	connectionString="server=.;user id=sa;password=123;database=LiteCommerceDB"/
+		</connectionStrings>
+
+			*providerName="SQLServer/FakeDB"
+			nhấp phải chọn reference chọn Domain, dataLayer, bussiness
+			
+			//code something
+			nhấp phải tên hàm chọn Add View chọn template = list, modelClass = Domainmode
+
+nếu build tổng thể : buildSolution
+build thường : chuột phải project chọn build
+
+/// : chú thích code
+ctrl + M + O : thu gọn code
+ctrl + M + L : mở rộng code
+
+
+
+
+
+Được xây dựng theo mô hình 3 lớp .Web (PresentationLayer)
+						.DataLayer(Data Access Layer)
+						.Bussiness Logic Layer (BussinessLayer)
+						.DomainModel : dùng để khai báo các cấu trúc dữ liệu (Entities)

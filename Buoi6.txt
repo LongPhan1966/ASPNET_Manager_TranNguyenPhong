@@ -1,0 +1,18 @@
+giao tiếp dữ liệu giữa Controller và View
+	ViewBag	thuận lợi khi dùng nhưng không chặt chẽ và dễ gây ra lỗi (chỉ dùng
+			đối với nhưng dữ liệu đơn giản)
+
+	Sử dung thông qua model :
+		model : được coi như 1 biến mang theo dữ liệu (1 View chỉ nhận được model)
+		khi truyền model cho View thì phải khai báo KIỂU DỮ LIỆU model cho file View 
+			(Model khi dùng trong View thì phải viết hoa chữ cái đầu)
+	**nên sử dụng khai báo kiểu dữ liệu Model kiểu interface : 
+			IEnumerable (tập hợp tất cả các kiểu dữ)
+	**nếu sử dụng Modal để truyền cho View thì phải return(model) ở Controller
+
+
+Trong thư mục Model ứng dụng web bổ sung 1 abstract class: BasePaginationResult
+*abstract class là 1 lớp cha để các lớp con kế thừa và tái sử dụng các hàm của lớp cha,
+	đồng thời có thể thêm các thuộc tính riêng của lớp con
+
+hoàn thiện chức năng tìm kiếm phân trang của loại hàng, nhân viên, người giao hàng

@@ -1,0 +1,19 @@
+trong asp được cấp ModelState khi có lỗi nào đó thì đưa vào ModelState
+	2 tham số : Tên lỗi , nội dung lỗi
+
+isValid trả về true khi trong modelstate không có lỗi và ngược lại
+
+
+hoàn thiện các chức năng datalayer và bslayer
+
+
+Bổ sung .Web thư mục AppCodes
+
+
+thay thế tất cả các lớp Interface 
+
+
+
+Hoàn thiệt các chức năng thêm sửa xóa của các trường còn lại (thiếu ảnh thì có thể để trống)
+điều chỉnh các lớp con kế thừa các lớp các Interface bằng ICommonDAL, sửa lỗi ở businessLayer
+	

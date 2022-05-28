@@ -1,0 +1,11 @@
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.BusinessLayer\bin\Debug\SV18T1021172.BusinessLayer.dll
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.BusinessLayer\bin\Debug\SV18T1021172.BusinessLayer.pdb
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.BusinessLayer\obj\Debug\SV18T1021172.BusinessLayer.csproj.AssemblyReference.cache
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.BusinessLayer\obj\Debug\SV18T1021172.BusinessLayer.csproj.CoreCompileInputs.cache
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.BusinessLayer\obj\Debug\SV18T1021172.BusinessLayer.dll
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.BusinessLayer\obj\Debug\SV18T1021172.BusinessLayer.pdb
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.BusinessLayer\bin\Debug\SV18T1021172.DataLayer.dll
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.BusinessLayer\bin\Debug\SV18T1021172.DomainModel.dll
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.BusinessLayer\bin\Debug\SV18T1021172.DataLayer.pdb
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.BusinessLayer\bin\Debug\SV18T1021172.DomainModel.pdb
+D:\HUSC\Ki4Nam2\AspWeb\repo\SV18T1021172\SV18T1021172.BusinessLayer\obj\Debug\SV18T1021172.BusinessLayer.csproj.CopyComplete

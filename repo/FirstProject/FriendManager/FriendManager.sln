@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{315F8CCF-6947-4E46-80C4-F84139D4D417}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{2FC1C4DF-5FDB-4F9C-8C96-EA205E4ED6EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendManager.Web", "FriendManager.Web\FriendManager.Web.csproj", "{3D0277F1-5437-4115-A419-B8533BACACC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D0277F1-5437-4115-A419-B8533BACACC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0277F1-5437-4115-A419-B8533BACACC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0277F1-5437-4115-A419-B8533BACACC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0277F1-5437-4115-A419-B8533BACACC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3D0277F1-5437-4115-A419-B8533BACACC2} = {315F8CCF-6947-4E46-80C4-F84139D4D417}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41276605-25E3-4F2D-8EE4-D153B282F5E7}
+	EndGlobalSection
+EndGlobal
